@@ -28,6 +28,28 @@ public class secondAuto {
         System.out.println(news);
     }
 
+    //测试submit操作
+    public void Submit_test() throws InterruptedException{
+        driver.findElement(By.cssSelector("#kw")).sendKeys("迪丽热巴");
+        driver.findElement(By.cssSelector("#su")).submit();
+    }
+
+    //清除操作
+    public void clear_test() throws InterruptedException {
+        driver.findElement(By.cssSelector("#kw")).sendKeys("杨幂哈哈");
+        Thread.sleep(3000);
+        driver.findElement(By.cssSelector("#kw")).clear();//删除输入框的内容
+        driver.findElement(By.cssSelector("#kw")).sendKeys("王大毛");//再次输入
+    }
+
+    //获取文本
+    public void getText(){
+        String text1 = driver.findElement(By.cssSelector("ul > li:nth-child(1)")).getText();
+        System.out.println("应该的文本是我的咨询，实际打印出来的文本是"+text1);
+        //获取属性值
+        String text2 = driver.findElement(By.cssSelector("#su")).getAttribute("value");
+        System.out.println("应该打印出来的是百度一下，实际打印出来的是"+text2);
+    }
     public void wait_test() throws InterruptedException {
         //不添加等待的话页面没有渲染完成，导致最后查找页面元素失败，添加强制等待3s，再进行页面元素查找，结果成功！
 //        driver.findElement(By.cssSelector("#kw")).sendKeys("杨幂");
