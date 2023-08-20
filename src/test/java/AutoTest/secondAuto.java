@@ -6,8 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class secondAuto {
-    public ChromeDriver driver = new ChromeDriver();
-
+    ChromeDriver driver = new ChromeDriver();
     public void start_test() throws InterruptedException {
         driver.get("https://www.baidu.com");
         Thread.sleep(3000);
