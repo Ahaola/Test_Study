@@ -22,6 +22,7 @@ public class demo10 {
         //通过getWindowHandles获取所有的窗口句柄
         //通过getWindowHandle获取get打开的页面窗口句柄
         Set<String> handles =  driver.getWindowHandles();
+        //target用来获取当前最新的页面地址
         String target = "";
         for (String handle:handles) {
             target = handle;

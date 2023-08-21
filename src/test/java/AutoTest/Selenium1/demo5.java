@@ -20,6 +20,9 @@ public class demo5 {
         WebElement webElement = driver.findElement(By.cssSelector("#s_tab > div > a.s-tab-item.s-tab-item_1CwH-.s-tab-pic_p4Uej.s-tab-pic"));
         //鼠标右击
         Actions actions = new Actions(driver);
-        actions.moveToElement(webElement).contextClick().perform();
+//        actions.contextClick(webElement).perform();
+        actions.doubleClick(webElement);
+//        actions.moveToElement(webElement).contextClick().perform();
+        driver.quit();
     }
 }

@@ -17,7 +17,6 @@ public class dmeo3 {
 
         //全屏
         driver.manage().window().maximize();
-        driver.manage().window().fullscreen();
         //设置固定宽，高
         driver.manage().window().setSize(new Dimension(1000,800));
 

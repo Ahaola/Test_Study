@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-//键盘事件 让自动化代码1在运行过程中可以进行点击键盘上的按键操作
+//键盘事件 让自动化代码在运行过程中可以进行点击键盘上的按键操作
 public class demo4 {
     public static void main(String[] args) {
         ChromeOptions options = new ChromeOptions();

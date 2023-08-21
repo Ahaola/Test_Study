@@ -18,6 +18,6 @@ public class demo7 {
         WebElement webElement = driver.findElement(By.cssSelector("#ShippingMethod"));
         Select select = new Select(webElement);
         select.selectByIndex(3);
-//        select.selectByValue("9.03");
+        select.selectByValue("9.03");
     }
 }
